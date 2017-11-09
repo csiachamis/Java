@@ -1,4 +1,4 @@
-package test;
+package numbers;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ import java.util.*;
  *
  * @author Xaris
  */
-public class Test {
+public class Numbers {
 
     /**
      * @param args the command line arguments
