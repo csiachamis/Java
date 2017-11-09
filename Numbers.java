@@ -12,13 +12,13 @@ public class Numbers {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        
+        String s,i;
+        int x,y,z;
+        boolean done;
 
         //Concatenates 2 values, 1 string and 1 integer and then it prints them
        
-        
-        String s,i;
-        
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give me a string: ");
         s = scanner.next();
