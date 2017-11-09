@@ -1,0 +1,54 @@
+package test;
+
+import java.util.*;
+
+/**
+ *
+ * @author Xaris
+ */
+public class Test {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+
+        //Πρόγραμμα σε java το οποίο παίρνει από το πληκτρολόγιο 2 τιμές, 
+        //1 αριθμητική και 1 string και τις συνενώνει και τις εκτυπώνει.
+        
+        String s,i;
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give me a string: ");
+        s = scanner.next();
+        System.out.println("Give me an integer: ");
+        i = scanner.next();
+        System.out.println(s+i);
+        
+      
+      //Ζητάμε από το χρήστη 3 ακέραιους αριθμούς. Ο δεύτερος αριθμός πρέπει να είναι τουλάχιστον τριπλάσιος από τον πρώτο. 
+      //Ο τρίτος αριθμός πρέπει να είναι μεγαλύτερος από το άθροισμα του πρώτου και του δεύτερου. Όσο αυτές οι συνθήκες δεν είναι αλήθεια 
+      //συνεχίζουμε και ζητάμε τους 3 αριθμούς μέχρι να ικανοποιηθούν οι συνθήκες.
+        
+        while (!done){
+            System.out.println("Give me the first integer: ");
+            x = scanner.nextInt();
+            System.out.println("Give me the second integer: ");
+            y = scanner.nextInt();
+            System.out.println("Give me the third integer: "); 
+            z = scanner.nextInt();
+            
+            if ((y>=3*x) && (z>x+y)){
+                done = true;
+                System.out.println("Numbers meet the requirements!");
+            } else 
+                System.out.println("Numbers don't meet the requirements!\nStart again:");
+        }
+        
+       
+              
+    }
+    
+}
+    
