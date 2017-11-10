@@ -43,9 +43,9 @@ public class TestArray {
         for (i = 0; i<counts.length; i++){
             sumi = sumi + counts[i][0][0];
             for (j = 0; j<counts[i].length; j++){
-                sumj = sumj + counts[0][j][0];
+                sumj = sumj + counts[i][j][0];
                 for (k =0; k < counts[i][j].length; k++){
-                    sumk = sumk + counts[0][0][k];
+                    sumk = sumk + counts[i][j][k];
                 }
             }
         } */
