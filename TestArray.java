@@ -32,9 +32,9 @@ public class TestArray {
                 for (k =0; k < counts[i][j].length; k++){
                     counts[i][j][k] = i+j+k;
                     System.out.println("Counts["+i+"]["+j+"]["+k+"]: "+counts[i][j][k]);
-                    sumk += counts[0][0][k];
+                    sumk += counts[i][j][k];
                 }
-                sumj += counts[0][j][0];
+                sumj += counts[i][j][0];
             }
             sumi += counts[i][0][0];
         }
