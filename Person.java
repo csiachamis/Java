@@ -8,6 +8,7 @@ package application1;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.time.Year;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -73,6 +74,13 @@ public class Person {
             Logger.getLogger(Person.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+    }
+    
+    public int returnAge(String dateOfBirth){
+        String yearOfBirth;
+        yearOfBirth = (String) dateOfBirth.subSequence(6, 10);
+        int age = Year.now().getValue() - Integer.parseInt(yearOfBirth);
+        return age;
     }
     
 }
