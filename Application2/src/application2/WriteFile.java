@@ -41,7 +41,7 @@ public class WriteFile {
         this.string = s;
     }
     
-    public void setString(int l){
+    public void setLine(int l){
         this.line = l;
     }
     

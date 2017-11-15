@@ -37,24 +37,29 @@ public class Application2 {
                     switch (i) {
                         case 0:
                             //person.writeString(i, "Line " + (i+1)+": " + person.getString(0) + ", " + person.getString(1) + ", " + person.getString(2));
-                            writefile = new WriteFile("Line " + (i+1)+": " + person.getString(0) + ", " + person.getString(1) + ", " + person.getString(2),i);
+                            //writefile = new WriteFile("Line " + (i+1)+": " + person.getString(0) + ", " + person.getString(1) + ", " + person.getString(2),i);
+                            writefile.setString("Line " + (i+1)+": " + person.getString(0) + ", " + person.getString(1) + ", " + person.getString(2)); 
+                            writefile.setLine(i);
                             writefile.writeString();
                             break;
                         case 1:
                             //person.writeString(i, "Line " + (i+1)+": " + person.getString(3));
-                            writefile = new WriteFile("Line " + (i+1)+": " + person.getString(3),i);
+                            //writefile = new WriteFile("Line " + (i+1)+": " + person.getString(3),i);
+                            writefile.setString("Line " + (i+1)+": " + person.getString(3));
+                            writefile.setLine(i);
                             writefile.writeString();
                             break;
                         case 2:
                             //person.writeString(i, "Line " + (i+1)+": " + person.returnAge(person.getString(3)));
-                            writefile = new WriteFile("Line " + (i+1)+": " + person.returnAge(person.getString(3)),i);
+                            //writefile = new WriteFile("Line " + (i+1)+": " + person.returnAge(person.getString(3)),i);
+                            writefile.setString("Line " + (i+1)+": " + person.returnAge(person.getString(3)));
+                            writefile.setLine(i);
                             writefile.writeString();
                             break;
                         default:
                             break;
                     }
                 }   
-        
         
     }
     
