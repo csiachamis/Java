@@ -8,21 +8,22 @@
 	
 	<body>
 	
-	<p> Number 1: <input type="text" id="number1"/> </p>
-	<p>Number 2: <input type="text" id="number2"/> </p>
+	<p> Number 1: <input type="text" id="number1" onchange="onChange()"/> </p>
+	<p>Number 2: <input type="text" id="number2" onchange="onChange()"/> </p>
 	
-	<p>Sign: <select id="select">
+	<p>Sign: <select id="select" onchange="onChange()">
 		<option value="+">+</option>
 		<option value="-">-</option>
 		<option value="*">*</option>
 		<option value="/">/</option>
 	</select></p>
 	
-	<p><button id="button" type="button">Calculate</button> </p>
+	<!--<p><button id="button" type="button">Calculate</button> </p>-->
 	<p>Result: <output type="text" id="result"/> </p>
 	
 	<script>
-		var handleClick = function (event) {
+		<!--var handleClick = function (event) {-->
+		function onChange(){
 			var n1 = document.getElementById("number1").value;
 			var n2 = document.getElementById("number2").value;
 			var sn = document.getElementById("select").value;
@@ -37,8 +38,8 @@
 			if(sn == "/")
 				document.getElementById("result").value = n1 / n2;
 		};
-		var button = document.querySelector('#button');
-		button.addEventListener('click', handleClick);
+		<!--var button = document.querySelector('#button');-->
+		<!--button.addEventListener('click', handleClick);-->
 	</script>
 	
 	</body>
