@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			p: {text-align:center;}
+		</style>
+	</head>
+	
+	<body>
+	
+	<p> Number 1: <input type="text" id="number1"/> </p>
+	<p>Number 2: <input type="text" id="number2"/> </p>
+	<p>Sign: <input type="text" id="sign"/> </p>
+	<button id="button" type="button">Calculate</button> </p>
+	<p>Result: <output type="text" id="result"/> </p>
+	
+	<script>
+		var handleClick = function (event) {
+			var n1 = document.getElementById("number1").value;
+			var n2 = document.getElementById("number2").value;
+			var sn = document.getElementById("sign").value;
+			
+			
+			if(sn == "+")
+				document.getElementById("result").value = parseInt(n1) + parseInt(n2);
+			if(sn == "-")
+				document.getElementById("result").value = parseInt(n1) - parseInt(n2);
+			if(sn == "*")
+				document.getElementById("result").value = parseInt(n1) * parseInt(n2);
+			if(sn == "/")
+				document.getElementById("result").value = parseInt(n1) / parseInt(n2);
+		};
+		var button = document.querySelector('#button');
+		button.addEventListener('click', handleClick);
+	</script>
+	
+	</body>
+</html>
